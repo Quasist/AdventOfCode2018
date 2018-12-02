@@ -9,6 +9,7 @@ rule link
   command = $cc $in -o $out
 
 build main.o: compile main.cpp
+build part2.o: compile part2.cpp
 build day2: link main.o
-
+build part2: link part2.cpp
 default day2
